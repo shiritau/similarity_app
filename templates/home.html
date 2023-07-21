@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+  <!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">Shiri</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="/">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#"> About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" herf="#"> Contact </a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+
+
+  {% block content %}
+
+
+  <!-- Jumbotron -->
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+	    <h1 class="display-4">Hello</h1>
+	    <p class="lead">Collection of experiments, thoughts and useful resources.</p>
+	  </div>
+	</div>
+
+  <!-- Features -->
+	<div class="container">
+	  <div class="row">
+<!--	    <div class="col-md-4">-->
+<!--	      <div class="card">-->
+<!--	        <div class="card-body">-->
+<!--	          <h5 class="card-title">CelebA Features </h5>-->
+<!--	          <p class="card-text">Upload an image to get its descriptive features, based on 40 CelebA features</p>-->
+<!--				<a class="btn btn-secondary btn-md" href="/classify" role="button">Try it out</a>-->
+
+<!--	        </div>-->
+<!--	      </div>-->
+<!--	    </div>-->
+	    <div class="col-md-5">
+	      <div class="card">
+	        <div class="card-body">
+	          <h5 class="card-title">PCA</h5>
+	          <p class="card-text">PCA plot of identitiy based on CelebA embedding</p>
+				<a class="btn btn-secondary btn-md" href="/pca" role="button">View</a>
+
+	        </div>
+	      </div>
+	    </div>
+	    <div class="col-md-5">
+	      <div class="card">
+	        <div class="card-body">
+	          <h5 class="card-title">Get Similairty</h5>
+	          <p class="card-text">Upload 2 images to get their cosine similarity.</p>
+				<a class="btn btn-secondary btn-md" href="/similarity" role="button">Try</a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+{% endblock %}
+	<!-- Include jQuery and Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery"></script>
+
+
+  </body>
+</html>

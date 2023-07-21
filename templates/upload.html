@@ -1,0 +1,16 @@
+{% extends "home.html" %}
+{% block content %}
+<html>
+  <head>
+    <title>Classify Image</title>
+  </head>
+  <body>
+    <h1>Classify Image</h1>
+    <form action="/classify" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*">
+      <br>
+      <input type="submit" value="Classify">
+    </form>
+  </body>
+</html>
+{% endblock %}
